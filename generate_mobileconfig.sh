@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Define the GitHub raw URL for the config.json
-CONFIG_URL="config.json"
+CONFIG_URL="https://raw.githubusercontent.com/jimjonesbabyfreshout/dynamic-vpn-config/main/config.json"
 
 # Fetch the latest IP from the GitHub repository
 IP=$(curl -s $CONFIG_URL | jq -r ‘.remote_ip’)
